@@ -1,0 +1,278 @@
+/* ---------- Google Font ---------- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,800);
+
+/* RESET STYLES */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+
+a {
+    color: #BA0707;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.3em;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 1.3em;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    padding-bottom: 11px;
+}
+
+p,
+div,
+span {
+    line-height: 1.5em;
+}
+
+
+/* .column-clear {
+    clear: both;
+} */
+
+.mainWrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 100px 0 20px 0;
+    text-align: center;
+    color: #3E4156;
+}
+
+.back {
+    text-align: center;
+}
+
+.header {
+    display: block;
+    background: #1A2327;
+}
+
+.menu {
+    display: block;
+    z-index: 999;
+    margin: 0;
+    text-align: center;
+
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    z-index: 999900;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 11px;
+    display: block;
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+    color: #ffffff;
+    background: #37BD80;
+}
+
+.menu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background:  #fff;
+    
+
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.menu ul li {
+    display: block;
+    float: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.menu ul li a {
+    font-size: 12px !important;
+    font-weight: normal;
+    display: block;
+    color: #797979;
+    border-left: 3px solid #ffffff;
+    background: #ffffff;
+    transition: .5s;
+}
+
+.menu ul li a:hover,
+.menu ul li:hover>a {
+    background: #f0f0f0;
+    border-left: 3px solid #37BD80;
+    color: #797979;
+}
+
+.menu li:hover>ul {
+    display: block;
+    text-align: left;
+}
+
+.menu ul ul {
+    left: 149px;
+    top: 0px;
+}
+
+.mobile-menu {
+    display: none;
+    width: 100%;
+    padding: 11px;
+    /* background: #3E4156; */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mobile-menu:hover {
+    background: #3E4156;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 979px) {
+    .mainWrap {
+        width: 768px;
+    }
+
+    .menu ul {
+        top: 37px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 1037px) {
+    .mainWrap {
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+        max-height: calc(100vh - 50px);
+        overflow-y: auto !important;
+        z-index: 9 !important;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav {
+        margin: 0;
+        background: none;
+        width: 100vw;
+    }
+
+    .menu li {
+        display: block;
+        margin: 0;
+    }
+
+    .menu li a {
+        background: #ffffff;
+        color: #797979;
+        border-top: 1px solid #e0e0e0;
+        border-left: 3px solid #ffffff;
+    }
+
+    .menu li a:hover,
+    .menu li:hover>a {
+        background: #f0f0f0;
+        color: #797979;
+        border-left: 3px solid #9CA3DA;
+    }
+
+    .menu ul {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .menu ul ul {
+        left: 0;
+    }
+    .menu{
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}

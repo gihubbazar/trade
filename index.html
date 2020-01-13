@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NAME_OF_COMPANY</title>
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Modak&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="./logo.ico"/>
+
+    <link rel="stylesheet" href="./BTNstyle.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="res/css/style.css" />
+    <link rel="stylesheet" href="./Media/media.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./pages/build.app.css">
+    <!-- paralla_carousel -->
+    <script src="./code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="./jquery-parallax-carousel.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/menu.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./res/css/font-awesome.css">
+    <link rel="stylesheet" href="./style_menu.css">
+
+    <!-- menu_spy -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+
+
+
+    <script src="./js/custom_scrollbar.min.js"></script>
+    <script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- <script src="./js/index.html"></script> -->
+
+
+
+
+    <!--     стили прелоадера-->
+    <style>
+        #p_prldr {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #1c2326;
+            opacity: .9;
+            z-index: 30;
+        }
+
+        .contpre small {
+            font-size: 25px;
+        }
+
+        .contpre {
+            width: 230px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            margin-left: -125px;
+            margin-top: -75px;
+            color: #fff;
+            font-size: 40px;
+            letter-spacing: -2px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        #p_prldr .svg_anm {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            background: url(images/oval.svg) center center no-repeat;
+            background-size: 41px;
+            margin: -16px 0 0 -16px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        .banter-loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 72px;
+            height: 72px;
+            margin-left: -36px;
+            margin-top: -36px;
+        }
+
+        .banter-loader__box {
+            float: left;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+        }
+
+        .banter-loader__box:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+
+        .banter-loader__box:nth-child(3n) {
+            margin-right: 0;
+            margin-bottom: 6px;
+        }
+
+        .banter-loader__box:nth-child(1):before,
+        .banter-loader__box:nth-child(4):before {
+            margin-left: 26px;
+        }
+
+        .banter-loader__box:nth-child(3):before {
+            margin-top: 52px;
+        }
+
+        .banter-loader__box:last-child {
+            margin-bottom: 0;
+        }
+
+        @keyframes moveBox-1 {
+            9.0909090909% {
+                transform: translate(-26px, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(0px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(0px, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(26px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(26px, 26px);
+            }
+
+            54.5454545455% {
+                transform: translate(26px, 26px);
+            }
+
+            63.6363636364% {
+                transform: translate(26px, 26px);
+            }
+
+            72.7272727273% {
+                transform: translate(26px, 0px);
+            }
+
+            81.8181818182% {
+                transform: translate(0px, 0px);
+            }
+
+            90.9090909091% {
+                transform: translate(-26px, 0px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(1) {
+            animation: moveBox-1 4s infinite;
+        }
+
+        @keyframes moveBox-2 {
+            9.0909090909% {
+                transform: translate(0, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(0px, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(26px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(26px, 26px);
+            }
+
+            54.5454545455% {
+                transform: translate(26px, 26px);
+            }
+
+            63.6363636364% {
+                transform: translate(26px, 26px);
+            }
+
+            72.7272727273% {
+                transform: translate(26px, 26px);
+            }
+
+            81.8181818182% {
+                transform: translate(0px, 26px);
+            }
+
+            90.9090909091% {
+                transform: translate(0px, 26px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(2) {
+            animation: moveBox-2 4s infinite;
+        }
+
+        @keyframes moveBox-3 {
+            9.0909090909% {
+                transform: translate(-26px, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(-26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(0px, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(-26px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(-26px, 0);
+            }
+
+            54.5454545455% {
+                transform: translate(-26px, 0);
+            }
+
+            63.6363636364% {
+                transform: translate(-26px, 0);
+            }
+
+            72.7272727273% {
+                transform: translate(-26px, 0);
+            }
+
+            81.8181818182% {
+                transform: translate(-26px, -26px);
+            }
+
+            90.9090909091% {
+                transform: translate(0px, -26px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(3) {
+            animation: moveBox-3 4s infinite;
+        }
+
+        @keyframes moveBox-4 {
+            9.0909090909% {
+                transform: translate(-26px, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(-26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(-26px, -26px);
+            }
+
+            36.3636363636% {
+                transform: translate(0px, -26px);
+            }
+
+            45.4545454545% {
+                transform: translate(0px, 0px);
+            }
+
+            54.5454545455% {
+                transform: translate(0px, -26px);
+            }
+
+            63.6363636364% {
+                transform: translate(0px, -26px);
+            }
+
+            72.7272727273% {
+                transform: translate(0px, -26px);
+            }
+
+            81.8181818182% {
+                transform: translate(-26px, -26px);
+            }
+
+            90.9090909091% {
+                transform: translate(-26px, 0px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(4) {
+            animation: moveBox-4 4s infinite;
+        }
+
+        @keyframes moveBox-5 {
+            9.0909090909% {
+                transform: translate(0, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(0, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(0, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(26px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(26px, 0);
+            }
+
+            54.5454545455% {
+                transform: translate(26px, 0);
+            }
+
+            63.6363636364% {
+                transform: translate(26px, 0);
+            }
+
+            72.7272727273% {
+                transform: translate(26px, 0);
+            }
+
+            81.8181818182% {
+                transform: translate(26px, -26px);
+            }
+
+            90.9090909091% {
+                transform: translate(0px, -26px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(5) {
+            animation: moveBox-5 4s infinite;
+        }
+
+        @keyframes moveBox-6 {
+            9.0909090909% {
+                transform: translate(0, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(-26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(-26px, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(0px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(0px, 0);
+            }
+
+            54.5454545455% {
+                transform: translate(0px, 0);
+            }
+
+            63.6363636364% {
+                transform: translate(0px, 0);
+            }
+
+            72.7272727273% {
+                transform: translate(0px, 26px);
+            }
+
+            81.8181818182% {
+                transform: translate(-26px, 26px);
+            }
+
+            90.9090909091% {
+                transform: translate(-26px, 0px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(6) {
+            animation: moveBox-6 4s infinite;
+        }
+
+        @keyframes moveBox-7 {
+            9.0909090909% {
+                transform: translate(26px, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(26px, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(0px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(0px, -26px);
+            }
+
+            54.5454545455% {
+                transform: translate(26px, -26px);
+            }
+
+            63.6363636364% {
+                transform: translate(0px, -26px);
+            }
+
+            72.7272727273% {
+                transform: translate(0px, -26px);
+            }
+
+            81.8181818182% {
+                transform: translate(0px, 0px);
+            }
+
+            90.9090909091% {
+                transform: translate(26px, 0px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(7) {
+            animation: moveBox-7 4s infinite;
+        }
+
+        @keyframes moveBox-8 {
+            9.0909090909% {
+                transform: translate(0, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(-26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(-26px, -26px);
+            }
+
+            36.3636363636% {
+                transform: translate(0px, -26px);
+            }
+
+            45.4545454545% {
+                transform: translate(0px, -26px);
+            }
+
+            54.5454545455% {
+                transform: translate(0px, -26px);
+            }
+
+            63.6363636364% {
+                transform: translate(0px, -26px);
+            }
+
+            72.7272727273% {
+                transform: translate(0px, -26px);
+            }
+
+            81.8181818182% {
+                transform: translate(26px, -26px);
+            }
+
+            90.9090909091% {
+                transform: translate(26px, 0px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .banter-loader__box:nth-child(8) {
+            animation: moveBox-8 4s infinite;
+        }
+
+        @keyframes moveBox-9 {
+            9.0909090909% {
+                transform: translate(-26px, 0);
+            }
+
+            18.1818181818% {
+                transform: translate(-26px, 0);
+            }
+
+            27.2727272727% {
+                transform: translate(0px, 0);
+            }
+
+            36.3636363636% {
+                transform: translate(-26px, 0);
+            }
+
+            45.4545454545% {
+                transform: translate(0px, 0);
+            }
+
+            54.5454545455% {
+                transform: translate(0px, 0);
+            }
+
+            63.6363636364% {
+                transform: translate(-26px, 0);
+            }
+
+            72.7272727273% {
+                transform: translate(-26px, 0);
+            }
+
+            81.8181818182% {
+                transform: translate(-52px, 0);
+            }
+
+            90.9090909091% {
+                transform: translate(-26px, 0);
+            }
+
+            100% {
+                transform: translate(0px, 0);
+            }
+        }
+
+        .banter-loader__box:nth-child(9) {
+            animation: moveBox-9 4s infinite;
+        }
+    </style>
+    <!--    помощник онлайн-->
+    <!--<script src="//code.jivosite.com/widget.js" data-jv-id="d14ofCpNGx" async></script>-->
+
+</head>
+
+<body>
+
+    <!-- End Nav Section -->
+
+
+
+
+
+
+
+
+    <!--   прелоадер-->
+    <div id="p_prldr">
+        <div class="banter-loader">
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+        </div>
+    </div>
+
+
+    <!--           хеадер меню-->
+    <section id="home" class="header_background menu_color">
+
+        <div class="header">
+
+
+        </div>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- <div class="header_flex"> -->
+        <div class="nav_center">
+
+
+            <div class="header_flex " style="margin:0 auto; ">
+                <div class="mainWrap max_width_page">
+
+
+
+                    <a id="touch-menu" class="mobile-menu" href="#"><i class="icon-reorder"></i>Меню</a>
+
+                    <nav>
+                        <ul class="menu">
+
+
+
+                            <li>
+                                <a href="#"><img src="./img/arrow_down.png" style="width:14px; margin-right:5px;"
+                                         alt="Arrow">Продукты</a>
+                                <ul class="sub-menu ">
+
+                                    <div class="sub_menu_flex sub_products" >
+                                        <div>
+                                    <li> <a href="./pages/CFD.html"> CFD</a></li>
+                                    <li><a href="./pages/indexs.html">Индексы</a></li>
+                                    <li><a href="./pages/tradings_contract.html">Товары</a></li>
+                                    <li><a href="./pages/invest_bags.html"> Инвестиционные портфели</a></li>
+                                    <li><a href="./pages/obligation.html"> Облигации</a></li>
+                                </div>
+                                </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/arrow_down.png" style="width:14px; margin-right:5px;"
+                                         alt="Arrow">Обучение</a>
+                                <ul class="sub-menu study_sub_back">
+                                    <div class="sub_menu_flex" >
+                                        <div>
+                                            <li><a href="./pages/literatyra.html">Полезная литература</a></li>
+                                            <li><a href="./pages/what_is_Forex.html">Что такое FOREX</a></li>
+                                            <li><a href="./pages/begin.html">Начало Обучения</a></li>
+                                            <li><a href="./pages/pronoz_rynka.html">Прогноз Рынка</a></li>
+                                            <li><a href="./pages/Tex_analiz.html">Технический Анализ</a></li>
+                                            <li><a href="./pages/Fund_analiz.html">Фундаментальный Анализ</a></li>
+                                            <li><a href="./pages/how_to_earn_fx.html">Как зарабатывать на ForeX</a></li>
+
+                                            <li><a href="./pages/deposit_choice.html">Выбор Депозита</a></li>
+                                            <li><a href="./pages/about_cfd_trading.html">О CFD Торговле</a></li>
+                                        </div>
+                                        
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                            <li><a href="./pages/counts_types.html">Типы Счетов</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/arrow_down.png" style="width:14px; margin-right:5px;"
+                                         alt="Arrow">Торговая информация</a>
+                                <ul class="sub-menu trade_info">
+                                    <div  class="sub_menu_flex trade_info" ">
+                                        <div>
+                                        <li>
+                                        <li> <a href="./pages/CFD.html"> CFD</a></li>
+                                        <li><a href="./pages/open position.html">Открыть Позиции</a></li>
+                                        <li><a href="./pages/close_position.html">Закрыть Позиции</a></li>
+                                        <li><a href="./pages/credit.html">Кредитное плечо и маржа</a></li>
+                                        <li><a href="./pages/crypto.html">торговля криптовалютой</a></li>
+                                        <li><a href="./pages/risk_managment_tools.html">Инструменты управления рисками</a>
+                                        </li>
+                                        <li><a href="./pages/risk-control.html">Контроль рисков</a></li>
+                                    </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                            </li>
+                            
+                        </ul>
+                        </li>
+                        <li>
+                        <li><a href="./pages/Economic_calendar.html">Экономический Календарь</a>
+                        </li>
+                        <li>
+                        <li><a href="./pages/about.html">О нас</a>
+                        </li>
+                        <li>
+                            <a href="./registration/sign.html">Войти</a>
+                        </li>
+                        <li><a href="./registration/reg.html">Регистрация</a></li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-- </div> -->
+
+
+    </section>
+    </div>
+    <div class="vertical_widget">
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="background: #1A2327">
+            <div class="tradingview-widget-container__widget"></div>
+            <!-- <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Котировки</span></a> предоставлены TradingView</div> -->
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+                    async>
+                {
+                    "symbols": [{
+                            "proName": "OANDA:SPX500USD",
+                            "title": "S&P 500"
+                        },
+                        {
+                            "proName": "OANDA:NAS100USD",
+                            "title": "NASDAQ 100"
+                        },
+                        {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "BTC/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "ETH/USD"
+                        }
+                    ],
+                    "colorTheme": "dark",
+                    "isTransparent": false,
+                    "locale": "ru"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+
+
+
+
+
+
+
+    <div class="max_height_page cd-section section">
+
+
+
+        <div class="bd-example sec1">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators" style="z-index:1;">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./heade_slider/abstr.jpg" class="d-block w-100" style="height: 650px;" class="
+                                carousel_height" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="index">
+                                <h2 style="font-weight: 700;  ">NAME OF
+                                    COMPANY </h2>
+
+                                <p>Ваш лучший выбор</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./heade_slider/office.jpg" class="d-block w-100" style="height: 650px;" class="
+                                carousel_height" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="index">
+                                <h2 style="font-weight: 700; ">ПАССИВНЫЙ
+                                    ДОХОД </h2>
+                                <btn shutter-in-vertical class="btn shutter-in-vertical"> <a href="#"
+                                       style="color:#fff;">Стать
+                                        Инвестором</a></btn shutter-in-vertical>
+
+
+                                <p>Персональное сопровождение, рыночные данные, углубленный анализ, высококлассные
+                                    торговые инструменты и аналитика</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./heade_slider/training.jpg" class="d-block w-100" style="height: 650px;"
+                             class="carousel_height" alt="IMG">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="index">
+                                <h2 style="font-weight: 700; font-family: 'Fascinate Inline', cursive;"> Обучение от
+                                    Профи </h2>
+                                <btn class="btn shutter-in-vertical"><a href="#" style="color: #fff; ">Начать
+                                        Обучение</a></btn shutter-in-vertical>
+                                <p>Современное, качественное обучение по уникальным методикам, разработанным в нашей
+                                    компании для наших клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .carousel_height {
+                        height: 560px !important;
+                    }
+                </style>
+
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="btn shutter-in-vertical"
+                   data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="btn shutter-in-vertical"
+                   data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        </section>
+        <!-- <div class="pcarousel">
+        <div class="pcarousel-slides">
+            <div class="slide" id="slide-1">
+                <a href="#"><img src="./heade_slider/1.jpg" style="width: 100%; !important" alt="demo1" /></a> </div>
+            <div class="slide" id="slide-2">
+                <a href="#"><img src="./heade_slider/2.jpg"  style="width: 100%; !important" alt="demo2" /></a> </div>
+            <div class="slide" id="slide-3">
+                <a href="#"><img src="./heade_slider/3.jpg"  style="width: 100%; !important" alt="demo3" /></a> </div>
+        </div>
+    </div>
+    <style>
+        .pcarousel {
+            width: 100%;
+            height: 650px;
+            background: transparent url(home_bg.jpg) no-repeat 0 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .pcarousel .slide {
+            /* position: absolute; */
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+
+        .pcarousel-pager {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .pcarousel-pager-item {
+            height: 18px;
+            width: 18px;
+            /* float: left; */
+            margin: 5px;
+            background-color: rgba(128, 128, 128, 0.5);
+            cursor: pointer;
+        }
+
+        .pcarousel-pager-item.active {
+            background-color: #4c88c5;
+        }
+    </style> -->
+
+
+        <style>
+            .d-none {
+                display: block !important;
+                z-index: 1 !important;
+            }
+        </style>
+
+        <section id="about" class="container_div cd-section sec1   ">
+            <div class="max_width_page">
+                <div class="row_section  ">
+                    <div class="headline-box flex_blocks">
+                        <div class="  wow fadeInUp" data-wow-duration="1s"
+                             style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+
+                            <div class="headline-logo">
+                                <img src="./img/vnimanie_kartinka_28_20101811-1024x1024.png "
+                                     style="width:70px; padding-bottom: 10px;" alt="Focus on the client">
+                            </div>
+                            <div class="headline-content">
+                                <h4 class="heading-4" style="font-weight: 700; padding-bottom: 20px;">NAME OF COMPANY
+                                </h4>
+                                <p>Это путь к одному из самых выгодных и удобных методов заработка на торговле
+                                    финансовыми
+                                    активами. Любой желающий может получить доступ к извлечению прибыли из разницы в
+                                    продаже
+                                    криптовалют, акций, облигаций, ценных бумаг или
+                                    сырьевого товара.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="headline-box flex_blocks wow">
+                        <div class="wow fadeInUp" data-wow-duration="1s"
+                             style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+
+                            <div>
+                                <img src="./img/analytyka.png" style="width:70px; padding-bottom: 10px;"
+                                     alt="Set of trading tools">
+                            </div>
+                            <div class="headline-content">
+                                <h4 style="font-weight: 700; padding-bottom: 20px;">Набор торговых инструментов</h4>
+                                <p>Наши клиенты могут торговать валютами на Форексе, фондовыми индексами, сырьем,
+                                    акциями,
+                                    металлами, энергоносителями и криптовалютами с одного счета. Благодаря большому
+                                    выбору
+                                    торговых инструментов, которыми можно торговать
+                                    с одной платформы, торговать в NAME OFC COMPANY просто и прибыльно.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex_blocks headline-box">
+                        <div class=" wow fadeInUp" data-wow-duration="1s"
+                             style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                            <div class=" fadeInUp" data-wow-duration="1s"
+                                 style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                                <div class="headline-logo">
+                                    <img src="./img/simple-png-.png" style="width:70px; padding-bottom: 10px;"
+                                         alt="Documentation">
+                                </div>
+                                <div class="headline-content">
+                                    <h4 style="font-weight: 700; padding-bottom: 20px;" class="heading-4">Простота и
+                                        удобство</h4>
+                                    <p>Все наши системы созданы и обновляются для клиентов и в интересах клиентов. Все
+                                        действия, которые выполняют наши клиенты, просты и понятны – будь то открытие
+                                        счета,
+                                        управление счетом, пополнение и вывод средств и, наконец,
+                                        сам трейдинг.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- second _section_off -->
+
+        <!-- 3_section_begin -->
+        <div>
+            <!-- <section id="services" class="slider_background cd-section sec5">
+
+            <div class="max_width_page_2">
+                <div class="section_3_flex">
+                    <div class="slider">
+
+
+
+                        <img src="./Video/video_1.gif" style="margin-top: 15%; width: 100%;" alt="">
+                    </div>
+
+                    <div class="carousel_text ">
+
+                        <div style="float:right; margin-top:10px;" class="text_two">
+                            <p style="font-size:35px; text-align: center; font-weight:bold;">Решай сам где и когда
+                                <span style="color:#5AFEB4">ТЕБЕ</span> работать</p>
+                            <div class="variant_plus">
+                                <div class="plus_img">
+                                    <img src="./img/clock.png" style="width:30px; " alt="Clock">
+                                </div>
+                                <div class="plus_text">
+                                    <span style="font-size:18px; "> Работай в удобное время</span>
+                                </div>
+                            </div>
+                            <div class="variant_plus">
+                                <div class="plus_img">
+                                    <img src="./img/place.png" style="width:30px; " alt=" Place">
+                                </div>
+                                <div class="plus_text">
+                                    <span style="font-size:18px; "> Работай в удобном месте</span>
+                                </div>
+                            </div>
+                            <div class="variant_plus">
+                                <div class="plus_img">
+                                    <img src="./img/life.png" style="width:30px; " alt=" Your Life">
+                                </div>
+                                <div class="plus_text">
+                                    <span style="font-size:18px; ">Предоставь себе жизнь в удовольствие</span>
+                                </div>
+                            </div>
+                            <div style="margin-top:30px;">
+                                <a class="btn shutter-in-vertical" href="#" style=" text-decoration:none;">Стать
+                                    Инвестором</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        </div>
+
+        <!-- 3_seсtion_off -->
+        <!-- 4_section_begin -->
+
+        <section id="test" class="triple_back cd-section section3">
+            <div class="max_width_page">
+
+                <p class="work_with_us">ОТКРОЙТЕ БЕСКОНЕЧНЫЕ
+                    ВОЗМОЖНОСТИ
+                    <br> ФИНАНСОВЫХ РЫНКОВ</p>
+                <p style="font-size:25px; color:#282A2C; text-align:center;">Независимо от вашего опыта в торговле, вы
+                    сможете настроить нашу простую и удобную платформу под свои потребности.</p>
+                <div class="triple_img">
+                    <div style="margin-top:1px;" class="headline-box flex_blocks_second">
+                        <div style="text-align: center;" class="triple_image">
+                            <img style="width:100px; text-align:center; " src="./img/1.png" alt="How">
+                        </div>
+                        <div class="triple_text">
+                            <h4 style="text-align:center; font-weight: 700; padding: 10px;">Как зарабатывать трейдингом
+                            </h4>
+                            <p>Кто такие трейдеры и в чем суть их работы, как обычному человеку стать трейдером и что
+                                для
+                                этого нужно? Как научиться быть успешным и еще масса вопросов, которые возникают в
+                                момент
+                                знакомства с финансовыми рынками, будут освещены
+                                на семинаре «Как зарабатывать трейдингом».
+                            </p>
+                        </div>
+
+                    </div>
+                    <div style="margin-top:1px;" class="headline-box flex_blocks_second">
+                        <div style="text-align: center;" class="triple_image">
+                            <img style="width:80px; " src="./img/metatrader.png" alt="Platform">
+                        </div>
+                        <div class="triple_text">
+                            <h4 style="text-align:center; font-weight: 700; padding: 10px;">Современные платформы</h4>
+                            <p>Узнайте, как работать в самом популярном терминале для интернет-трейдинга.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top:1px;" class="headline-box flex_blocks_second">
+                        <div style="text-align:center;" class="triple_image">
+                            <img style="width:105px;" src="./img/why.png" alt="Why?">
+                        </div>
+                        <div class="triple_text">
+                            <h4 style="text-align:center; font-weight: 700; padding: 10px;">Зачем мне это нужно?</h4>
+                            <p>Неважно, чем Вы занимаетесь и где учились. Трейдинг сможет обеспечить Вам спокойствие за
+                                свое
+                                финансовое положение.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section_4_off -->
+        <!-- 5section_begin -->
+
+        <section id="contact" class="everywhere cd-section sec2 ">
+            <div class="max_width_page">
+                <div class="everywhere_flex">
+                    <div class="everywhere_text">
+                        <p style="font-size:30px; font-weight:bold">Торговая платформа</p>
+                        <hr style="width:100%; background:#37BD80; border:none; height:2px;">
+
+                        <p style="font-size:18px; line-height:30px;">
+                            Платформа, не содержит в себе скрытых комиссий, а также лишнего или чересчур сложного
+                            функционала. На ней отображается вся необходимая аналитическая информация, которая может
+                            понадобиться трейдеру для быстрого и эффективного старта, а также поддержка
+                            в дальнейшей торговле. Начните торговать прямо сейчас и убедитесь в этом сами!</p>
+
+                    </div>
+                    <div></div>
+                    <div class="everywhere_note">
+                        <div class="macbook">
+                            <img src="./back_img/dax_main_page_mac.png" style="width:100%;" alt="PC">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cottyr" class="cottyr_table cd-section ">
+            <div class="max_width_page">
+                <div class="cottyr_table">
+
+                    <!-- TradingView Widget BEGIN -->
+                    <div style="margin:auto; padding:30px;" class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com" rel="noopener"
+                               target="_blank"><span class="blue-text">Котировки</span></a> предоставлены TradingView
+                        </div>
+                        <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "light",
+                                "dateRange": "12m",
+                                "showChart": true,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": false,
+                                "width": "100%",
+                                "height": "500",
+                                "plotLineColorGrowing": "rgba(152, 0, 255, 1)",
+                                "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+                                "gridLineColor": "rgba(240, 243, 250, 1)",
+                                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                                "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                                "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                                "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+                                "tabs": [{
+                                    "title": "Индексы",
+                                    "symbols": [{
+                                        "s": "OANDA:SPX500USD",
+                                        "d": "S&P 500"
+                                    }, {
+                                        "s": "OANDA:NAS100USD",
+                                        "d": "Nasdaq 100"
+                                    }, {
+                                        "s": "FOREXCOM:DJI",
+                                        "d": "Dow 30"
+                                    }, {
+                                        "s": "INDEX:NKY",
+                                        "d": "Nikkei 225"
+                                    }, {
+                                        "s": "INDEX:DEU30",
+                                        "d": "DAX Index"
+                                    }, {
+                                        "s": "OANDA:UK100GBP",
+                                        "d": "FTSE 100"
+                                    }],
+                                    "originalTitle": "Indices"
+                                }, {
+                                    "title": "Фьючерсы",
+                                    "symbols": [{
+                                        "s": "CME_MINI:ES1!",
+                                        "d": "E-Mini S&P"
+                                    }, {
+                                        "s": "CME:6E1!",
+                                        "d": "Euro"
+                                    }, {
+                                        "s": "COMEX:GC1!",
+                                        "d": "Gold"
+                                    }, {
+                                        "s": "NYMEX:CL1!",
+                                        "d": "Crude Oil"
+                                    }, {
+                                        "s": "NYMEX:NG1!",
+                                        "d": "Natural Gas"
+                                    }, {
+                                        "s": "CBOT:ZC1!",
+                                        "d": "Corn"
+                                    }],
+                                    "originalTitle": "Commodities"
+                                }, {
+                                    "title": "Облигации",
+                                    "symbols": [{
+                                        "s": "CME:GE1!",
+                                        "d": "Eurodollar"
+                                    }, {
+                                        "s": "CBOT:ZB1!",
+                                        "d": "T-Bond"
+                                    }, {
+                                        "s": "CBOT:UB1!",
+                                        "d": "Ultra T-Bond"
+                                    }, {
+                                        "s": "EUREX:FGBL1!",
+                                        "d": "Euro Bund"
+                                    }, {
+                                        "s": "EUREX:FBTP1!",
+                                        "d": "Euro BTP"
+                                    }, {
+                                        "s": "EUREX:FGBM1!",
+                                        "d": "Euro BOBL"
+                                    }],
+                                    "originalTitle": "Bonds"
+                                }, {
+                                    "title": "Форекс",
+                                    "symbols": [{
+                                        "s": "FX:EURUSD"
+                                    }, {
+                                        "s": "FX:GBPUSD"
+                                    }, {
+                                        "s": "FX:USDJPY"
+                                    }, {
+                                        "s": "FX:USDCHF"
+                                    }, {
+                                        "s": "FX:AUDUSD"
+                                    }, {
+                                        "s": "FX:USDCAD"
+                                    }],
+                                    "originalTitle": "Forex"
+                                }]
+                            }
+                        </script>
+
+                    </div>
+                    <div class="cott_text" style="padding:30px;">
+                        <p style="font-size:30px; font-weight:bold">Онлайн-котировки</p>
+                        <hr style="width:100%; background:#37BD80; border:none; height:2px;">
+                        <p style="font-size:18px;">
+                            В режиме реального времени можно отслеживать все актуальные изменения биржевых котировок
+                            прямо
+                            на платформе. Кроме того, вспомогательный функционал предоставляет возможность ознакомиться
+                            с
+                            аналитическим прогнозированием самых выгодных сделок, которые
+                            будут проводиться в течение следующих 24 часов.
+                        </p>
+                    </div>
+                    <style>
+
+                    </style>
+                    <!-- TradingView Widget END -->
+                </div>
+            </div>
+        </section>
+        <div>
+            <section id="study" class="study cd-section study_back sec3" class="">
+                <div class="max_width_page">
+
+
+                    <div class="study_main_text">
+
+                        <div class="first_section_study">
+                            <div class="text_with_hr">
+                                <p class="study_main_text_off" style="font-size:24px; font-weight:700; ">
+                                    Обучение торговле
+
+                                </p>
+                                <hr class="study_main_text_off" style="border:none;  background:#37BD80; height:3px;">
+                            </div>
+                            <p style="font-size:18px; padding: 10px;">
+                                Нашими лучшими аналитиками была сделана выборка литературы, которая поможет вам познать
+                                биржевую торговлю от основ до высшего пилотажа.
+
+                                Она поможет торговать на финансовом рынке с максимальной пользой для приумножения своих
+                                капиталов.
+                                Помимо этого, можно найти ответы на множество
+                                ключевых вопросов и научится избегать нежелательных рисков.
+                                Данная литература абсолютно бесплатная и постоянно обновляется.
+
+                            </p>
+                        </div>
+                        <div class="pad_stud">
+                            <img src="./Video/video_2.gif" style="width: 100%; margin-top: 15%;" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="anal" class="analytics revealator-position-below cd-section">
+                <div class="max_width_page">
+                    <div class="study_content">
+                        <div class="left_content">
+                            <div class="blocks">
+                                <div class="left_content_img">
+                                    <img style="width:100px; padding:20px; margin-top:20px;" src="./img/strategy.png"
+                                         alt=" Analytics">
+                                </div>
+                                <div class="left_content_text">
+                                    <p style="font-size:24px;">АНАЛИТИКА</p>
+                                    <p style="font-size:18px;">
+                                        Новости об изменениях на финансовом рынке и текущих движениях ценового роста или
+                                        спада
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="blocks">
+                                <div class="left_content_img">
+                                    <img style="width:100px; padding:20px; margin-top:20px; " src="./img/analytyka.png"
+                                         alt=" Strategy">
+                                </div>
+                                <div class="left_content_text">
+                                    <p style="font-size:24px;">
+                                        ОНЛАЙН-КОТИРОВКИ
+                                    </p>
+                                    <p style="font-size:18px;">Вспомогательная функция для удобной и своевременной
+                                        покупки
+                                        или продажи финансовых инструментов.</p>
+                                </div>
+                            </div>
+                            <div class="blocks">
+                                <div class="left_content_img">
+                                    <img style="width:100px; padding:20px; margin-top:20px;" src="./img/library.png"
+                                         alt="Book">
+                                </div>
+                                <div class="left_content_text">
+                                    <p style="font-size:24px;">
+                                        ЛИТЕРАТУРА
+                                    </p>
+                                    <p style="font-size:18px;">
+                                        Масса полезных сведений, которые помогут отточить свои навыки и стратегию
+                                        торговли.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="right_content">
+                            <!--                    <img style="width:100%; margin-top:10%" src="./back_img/devices.png" alt="">-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <section id="advantages" class="why_we cd-section ">
+            <div class="max_width_page">
+                <p class="work_with_us" style=" ">
+                    ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ</p>
+                <div class="why_we_grid">
+                    <div class="whe_we_box headline-box" style="text-align: center;">
+                        <img src="./img/master_bill_finance_invoice_money_payment_receipt_icon_123239.png"
+                             alt="Master_count" style="width:80px">
+                        <p style="text-align: center; font-weight:bold; font-size:22px;">Мастер счёт</p>
+                        <p>
+                            Независимость работы управляющего от действий инвесторов и механизма автокоррекции
+                        </p>
+                    </div>
+                    <div class=" headline-box whe_we_box" data-wow-duration="1s"
+                         style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp; text-align: center;">
+                        <img src="./img/position.png" alt="Position" style="width:80px">
+
+                        <p style="text-align: center; font-weight:bold; font-size:22px;">Агрегация позиций</p>
+                        <p>
+                            Исполнение происходит после агрегации объема сделок Мастер-счета, ПАММ-модуля и МАМ-модуля.
+                        </p>
+
+                    </div>
+                    <div class="whe_we_box headline-box" data-wow-duration="1s"
+                         style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp; text-align: center;">
+                        <img src="./img/freedom-action-switches_107498.png" alt="Freedom" style="width:80px">
+                        <p style="text-align: center; font-weight:bold; font-size:22px;">Свобода действий</p>
+                        <p>
+                            МАМ-модуль позволяет начинать и заканчивать инвестирование в управляемый счёт в любой момент
+                        </p>
+                    </div>
+                    <div class="whe_we_box headline-box" data-wow-duration="1s"
+                         style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp; text-align: center;">
+                        <img src="./img/correction.png" alt="correction" style="width: 80px;">
+                        <p style="text-align: center; font-weight:bold; font-size:22px;">Автокоррекция</p>
+                        <p>
+                            Изменение средств инвесторов Управляемого счета не влияет на результаты торговли
+                        </p>
+                    </div>
+                    <div class="whe_we_box headline-box " data-wow-duration="1s"
+                         style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp; text-align: center;">
+                        <img src="./img/strategy.png" alt="strategy" style="width:80px">
+                        <p style="text-align: center; font-weight:bold; font-size:22px;">Уникальные стратегии</p>
+                        <p>
+                            Используй находки и решения экспертов, чтобы улучшить свои результаты
+                        </p>
+                    </div>
+                    <div class="whe_we_box headline-box" data-wow-duration="1s"
+                         style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp; text-align: center;">
+                        <img src="./img/low-entering-by-a-window-1_icon-icons.com_70630.png" alt="Low Enterance"
+                             style="width:80px">
+                        <p style="text-align: center; font-weight:bold; font-size:22px;">Низкий порог входа</p>
+                        <p>
+                            ПАММ-модуль позволяет инвестировать суммы от 10 USD
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="count" class="create_account cd-section sec4">
+
+            <div class="max_width_page">
+                <div class="line_account">
+                    <h2 style="font-weight: bold">Открыть счет просто</h2>
+
+                    <hr style="border:none;  background:#37BD80; height:3px;">
+                </div>
+                <div class="simple_steps_flex">
+                    <div class="steps">
+                        <span class="steps_number">
+                            1
+                        </span>
+                        <p class="steps_text">
+                            Регистрация
+                        </p>
+                        <span>
+                            Простая регистрация
+                        </span>
+                    </div>
+                    <div class="steps">
+                        <span class="steps_number">
+                            2
+                        </span>
+                        <p class="steps_text">
+                            Пополнить счёт
+                        </p>
+                        <span>
+                            Используйте любой удобный вариант
+                        </span>
+                    </div>
+                    <div class="steps">
+                        <span class="steps_number">
+                            3
+                        </span>
+                        <p class="steps_text">
+                            Торговля
+                        </p>
+                        <span>
+                            Доступ более чем к 35 000 инструментов для торговли различными классами активов
+                        </span>
+
+                    </div>
+                </div>
+                <div style="text-align:center;" class="account_create_btn">
+                    <button style="border: none; background: none;">
+                        <a class="btn shutter-in-vertical" href="#">
+                            Создать аккаунт
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <a class="scrollToTop" onclick="jQuery('html,body').animate({scrollTop:0}, 'slow');"><span
+                  class="fa fa-chevron-up"></span></a>
+        <!--/Scroll To Top-->
+        <script>
+            // ScrollToTop button toggle
+            jQuery(window).scroll(function () {
+                if (jQuery(window).scrollTop() > jQuery(window).height() / 3) {
+                    jQuery('.scrollToTop').toggleClass('showScrollTop', true);
+                } else {
+                    jQuery('.scrollToTop').removeClass('showScrollTop');
+                }
+            });
+        </script>
+
+        <!-- <div class="angled_down_inside black">
+        <div class="slope upleft"></div>
+        <div class="slope upright"></div>
+    </div> -->
+        <footer>
+
+
+            <div class="footer_main">
+
+                <section class="footer">
+                    <div class="max_width_page">
+                        <div class="footer_text">
+                            <div class="footer_flex">
+                                <div class="footer_contact">
+                                    <div class="footer_number">
+                                        <p style="font-size: 16px; font-weight: bold;"> <i><img style="width: 30px;"
+                                                     src="./img/Telegram_Messenger.png" alt="Telegram"></i> Telegram</p>
+                                        <hr style="background:#37BD80; height: 2px;">
+                                        <p>
+                                            @nameofcompany
+                                        </p>
+
+                                    </div>
+                                    <div class="footer_number">
+                                        <p style="font-size: 16px; font-weight: bold;"> <i><img style="width: 30px;"
+                                                     src="./img/Email-PNG-Photo.png" alt="Email"></i> Эл.Почта</p>
+                                        <hr style="background:#37BD80; height: 2px;">
+                                        <p>
+                                            nameofcompany@mail.com
+                                        </p>
+                                    </div>
+                                    <div class="footer_number">
+                                        <img src="./logo.png" alt="LOGO">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <p>
+                                Деятельность компании <span style="font-weight: bold;"> Name Of Company</span> разрешена
+                                и
+                                регулируется Комиссией по международным финансовым услугам Белиза (IFSC/60/383/TS/19).
+                            </p>
+                            <p style="line-height: 15px !important;">
+                                Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем,
+                                что
+                                такая торговля осуществляется за счет кредитования, что может привести к полной потере
+                                вами
+                                своего капитала. Такая торговля подходит не всем категориям инвесторов.
+                                При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на
+                                данном
+                                веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши
+                                личные обстоятельства, финансовое положение
+                                или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми
+                                продуктами, вы должны внимательно ознакомиться с нашим Клиентским соглашением и получить
+                                независимую консультацию.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div style="background:#eaeaea; padding: 10px;" class="cards services">
+                    <div class="max_width_page">
+
+                        <div style="text-align: center; color: #000;">
+                            <img style="width:20%" src="./cards/visa_PNG4.png" alt="Cards">
+                            <p style="padding-bottom: 0px;">Мы не передаем Ваши данные третьим лицам</p>
+                            <p>nameofcompany © 2019. Все права защищены.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--btn shutter-in-vertical_up-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+
+
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!--    preloade_script-->
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $preloader = $('#p_prldr'),
+                $svg_anm = $preloader.find('.svg_anm');
+            $svg_anm.fadeOut();
+            $preloader.delay(500).fadeOut('slow');
+        });
+    </script>
+
+
+    <!--    скроллбар-->
+
+    <script src="./js/jquery-2.1.1.js"></script>
+    <script src="./js/main.js"></script> <!-- Resource jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
